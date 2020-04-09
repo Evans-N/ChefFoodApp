@@ -1,14 +1,12 @@
 import React, { Component } from 'react';
-import Navbar from '../Components/Navbar';
-import Modal from '../Components/Modal';
+import './homePage.css';
 
 export class homePage extends Component {
-    constructor() {
-        super()
-    }
+
     render() {
         return (
             <div>
+                <h1>Chef-App</h1>
             </div>
         )
     }

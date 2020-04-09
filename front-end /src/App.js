@@ -1,12 +1,14 @@
 import React from 'react';
 import './App.css';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
-import Homepage from './Pages/homePage'
+import Homepage from './Pages/homePage';
 import Navbar from './Components/Navbar';
 import Login from './Components/Login';
 import SignUp from './Components/SignUp';
 import customerDash from './Pages/Customer/customerDash';
-import Modal from './Components/Modal';
+import chefReports from './Pages/Chef/chefReports';
+import createOrders from './Pages/Chef/createOrder';
+
 
 function App() {
   return (
@@ -19,6 +21,8 @@ function App() {
         <Route path='/Login' component={Login}/>
         <Route path='/Signup' component={SignUp}/>
         <Route path='/Profile' component={customerDash}/>
+        <Route path='/Reports' component={chefReports}/>
+        <Route path='/Orders' component={createOrders}/>
         
       </div>
       
